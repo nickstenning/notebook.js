@@ -16,7 +16,7 @@
   <script src="./vendor/sinon-chai.js"></script>
   <script>
     mocha.setup('bdd');
-    chai.should();
+    window.expect = chai.expect;
   </script>
   <script type="text/coffeescript">
     jQuery.ajaxSetup async: false
